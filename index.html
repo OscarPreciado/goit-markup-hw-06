@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/styles.css" />
+        <link rel="stylesheet" href="./css/normalize.css" />
+        <script
+            src="https://kit.fontawesome.com/88692b01fd.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <title>WebStudio</title>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="navbar">
+                <a class="logo" href="#">WebStudio</a>
+                <ul class="navbar_menu">
+                    <li><a class="page current" href="#estudio">Estudio</a></li>
+                    <li>
+                        <a class="page" href="./portfolio.html">Portafolio</a>
+                    </li>
+                    <li><a class="page" href="#contactos">Contactos</a></li>
+                </ul>
+            </nav>
+            <ul class="lista_contacto">
+                <li>
+                    <a class="item" href="#">
+                        <svg class="icon email">
+                            <use href="./images/SVG/svgs.svg#email"></use>
+                        </svg>
+                        info@devstudio.com</a
+                    >
+                </li>
+                <li>
+                    <a class="item" href="#">
+                        <svg class="icon smartphone">
+                            <use href="./images/SVG/svgs.svg#smartphone"></use>
+                        </svg>
+                        +52 55 5529 6000</a
+                    >
+                </li>
+            </ul>
+        </header>
+
+        <main>
+            <section class="seccion banner">
+                <h1 class="banner_title">
+                    SOLUCIONES EFICACES PARA SU NEGOCIO
+                </h1>
+                <button data-form-open class="btn_solicitar" type="button">
+                    Solicite nuestro servicio
+                </button>
+                <div class="overlay"></div>
+
+                <!-- MODAL -->
+                <!-- <div class="backdrop is-hidden" data-modal>
+                    <div class="modal">
+                        <button class="close-modal" data-modal-close>X</button>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Quae dolores natus quaerat, ipsa magnam, vero
+                            id molestiae, enim beatae animi aut veniam rerum hic
+                            expedita soluta distinctio excepturi corporis earum.
+                        </p>
+                    </div>
+                </div> -->
+
+                <!-- FORM -->
+                <div class="backdrop is-hidden" data-form>
+                    <form class="form" action="">
+                        <button class="close-form" data-form-close>X</button>
+                        <h3>Deje sus datos, nos contactaremos con usted</h3>
+                        <label class="label_form" for="nombre"
+                            >Nombre
+                                <input
+                                    class="input_form"
+                                    type="text"
+                                    id="nombre"
+                                    name="nombre"
+                                />
+                                <svg class="icon" width="12" height="12">
+                                    <use
+                                        href="./images/SVG/svgs.svg#persona"
+                                    ></use>
+                                </svg> 
+                        </label>
+                        
+
+                        <label class="label_form" for="telefono"
+                            >Telefono
+                            <input
+                                class="input_form"
+                                type="text"
+                                id="telefono"
+                                name="telefono"
+                            />
+                            <svg class="icon" width="13" height="13">
+                                <use
+                                    href="./images/SVG/svgs.svg#telefono"
+                                ></use>
+                            </svg> 
+                        </label>
+
+                        <label class="label_form" for="email"
+                            >Email
+                            <input
+                                class="input_form"
+                                type="email"
+                                id="email"
+                                name="email"
+                            />
+                            <svg class="icon" width="16" height="12">
+                                <use
+                                    href="./images/SVG/svgs.svg#mail"
+                                ></use>
+                            </svg> 
+                        </label>
+
+                        <label class="label_form" for="comentarios"
+                            >Comentarios
+                            <textarea
+                                class="textarea_form"
+                                cols="30"
+                                rows="10"
+                                type="text"
+                                id="comentarios"
+                                name="comentarios"
+                                placeholder="Introduzca el texto"
+                            ></textarea>
+                        </label>
+
+                        <div class="checked">
+                            <input
+                                type="checkbox"
+                                name="terminos"
+                                value="tyc"
+                                cursor="pointer"
+                            />
+                            <p>
+                                Estoy de acuerdo con el boletín informativo y
+                                acepto los Términos y Condiciones
+                            </p>
+                        </div>
+
+                        <div class="buttoncito">
+                            <button class="btn_form" type="submit">
+                                <span>Enviar</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <section class="seccion caracteristicas">
+                <ul class="lista_caracteristicas">
+                    <li class="elemento_caracteristica">
+                        <article class="atencion">
+                            <div>
+                                <svg class="icono-svg">
+                                    <use
+                                        href="./images/SVG/svgs.svg#antena"
+                                    ></use>
+                                </svg>
+                            </div>
+                            <h4 class="titulo_caracteristica">
+                                ATENCION A LOS DETALLES
+                            </h4>
+                            <p class="descripcion_caracteristicas">
+                                Nos adentramos en todos los detalles y procesos
+                                de su negocio, para así desarrollar una solución
+                                a su medida.
+                            </p>
+                        </article>
+                    </li>
+                    <li class="elemento_caracteristica">
+                        <article class="puntualidad">
+                            <div>
+                                <svg class="icono-svg">
+                                    <use
+                                        href="./images/SVG/svgs.svg#reloj"
+                                    ></use>
+                                </svg>
+                            </div>
+                            <h4 class="titulo_caracteristica">PUNTUALIDAD</h4>
+                            <p class="descripcion_caracteristicas">
+                                Con nosotros, usted puede sentirse seguro y
+                                protegido. Un principio importante de la
+                                empresa: respetar su tiempo y respetar los
+                                plazos acordados.
+                            </p>
+                        </article>
+                    </li>
+                    <li class="elemento_caracteristica">
+                        <article class="planificacion">
+                            <div>
+                                <svg class="icono-svg">
+                                    <use
+                                        href="./images/SVG/svgs.svg#diagrama"
+                                    ></use>
+                                </svg>
+                            </div>
+                            <h4 class="titulo_caracteristica">PLANIFICACION</h4>
+                            <p class="descripcion_caracteristicas">
+                                Usted podrá observar y participar en cada fase
+                                del desarrollo y aplicación de soluciones.
+                            </p>
+                        </article>
+                    </li>
+                    <li class="elemento_caracteristica">
+                        <article class="tecnologia">
+                            <div>
+                                <svg class="icono-svg">
+                                    <use
+                                        href="./images/SVG/svgs.svg#astronauta"
+                                    ></use>
+                                </svg>
+                            </div>
+                            <h4 class="titulo_caracteristica">
+                                TECNOLOGIA MODERNA
+                            </h4>
+                            <p class="descripcion_caracteristicas">
+                                Usamos herramientas innovadoras para resolver
+                                las tareas asignadas. Es hora de simplificar los
+                                procesos laborales.
+                            </p>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="seccion dedicamos">
+                <h2>A que nos dedicamos</h2>
+                <ul class="lista_dedicamos">
+                    <li class="fotos_dedicamos">
+                        <img src="./images/pc.jpg" alt="PC" width="300" />
+                    </li>
+                    <li class="fotos_dedicamos">
+                        <img src="./images/movil.jpg" alt="Movil" width="300" />
+                    </li>
+                    <li class="fotos_dedicamos">
+                        <img
+                            src="./images/tablet.jpg"
+                            alt="Tablet"
+                            width="300"
+                        />
+                    </li>
+                </ul>
+            </section>
+
+            <section class="seccion equipo">
+                <h2>Nuestro Equipo</h2>
+                <ul class="lista_equipo">
+                    <li class="elemento_equipo">
+                        <article class="tarjeta">
+                            <img
+                                src="./images/Andres.jpg"
+                                alt="Andres Cubo"
+                                width="200"
+                            />
+                            <h3 class="nombre">Andres Cubo</h3>
+                            <p class="trabajo">Diseñador de productos</p>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <svg class="redes">
+                                            <use
+                                                href="./images/SVG/svgs.svg#instagram"
+                                            ></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg class="redes">
+                                            <use
+                                                href="./images/SVG/svgs.svg#twitter"
+                                            ></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg class="redes">
+                                            <use
+                                                href="./images/SVG/svgs.svg#facebook"
+                                            ></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg class="redes">
+                                            <use
+                                                href="./images/SVG/svgs.svg#linkedin"
+                                            ></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </article>
+                    </li>
+                    <li class="elemento_equipo">
+                        <article class="tarjeta">
+                            <img
+                                src="./images/Carla.jpg"
+                                alt="Carla Palacios"
+                                width="200"
+                            />
+                            <h3 class="nombre">Carla Palacios</h3>
+                            <p class="trabajo">Desarrolladora Frontend</p>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <svg class="redes">
+                                            <use
+                                                href="./images/SVG/svgs.svg#instagram"
+                                            ></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg class="redes">
+                                            <use
+                                                href="./images/SVG/svgs.svg#twitter"
+                                            ></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg class="redes">
+                                            <use
+                                                href="./images/SVG/svgs.svg#facebook"
+                                            ></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg class="redes">
+                                            <use
+                                                href="./images/SVG/svgs.svg#linkedin"
+                                            ></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </article>
+                    </li>
+                    <li class="elemento_equipo">
+                        <article class="tarjeta">
+                            <img
+                                src="./images/Mario.jpg"
+                                alt="Mario Dorado"
+                                width="200"
+                            />
+                            <h3 class="nombre">Mario Dorado</h3>
+                            <p class="trabajo">Marketing</p>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <svg class="redes">
+                                            <use
+                                                href="./images/SVG/svgs.svg#instagram"
+                                            ></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg class="redes">
+                                            <use
+                                                href="./images/SVG/svgs.svg#twitter"
+                                            ></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg class="redes">
+                                            <use
+                                                href="./images/SVG/svgs.svg#facebook"
+                                            ></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg class="redes">
+                                            <use
+                                                href="./images/SVG/svgs.svg#linkedin"
+                                            ></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </article>
+                    </li>
+                    <li class="elemento_equipo">
+                        <article class="tarjeta">
+                            <img
+                                src="./images/Pablo.jpg"
+                                alt="Pablo Mijangos"
+                                width="200"
+                            />
+                            <h3 class="nombre">Pablo Mijangos</h3>
+                            <p class="trabajo">Diseñador IU</p>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <svg class="redes">
+                                            <use
+                                                href="./images/SVG/svgs.svg#instagram"
+                                            ></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg class="redes">
+                                            <use
+                                                href="./images/SVG/svgs.svg#twitter"
+                                            ></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg class="redes">
+                                            <use
+                                                href="./images/SVG/svgs.svg#facebook"
+                                            ></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg class="redes">
+                                            <use
+                                                href="./images/SVG/svgs.svg#linkedin"
+                                            ></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="seccion clientes-regulares">
+                <h2>Clientes regulares</h2>
+                <ul>
+                    <li>
+                        <svg class="svg-clientes" width="41" height="47">
+                            <use href="./images/SVG/svgs.svg#cliente-1"></use>
+                        </svg>
+                    </li>
+                    <li>
+                        <svg class="svg-clientes" width="40" height="52">
+                            <use href="./images/SVG/svgs.svg#cliente-2"></use>
+                        </svg>
+                    </li>
+                    <li>
+                        <svg class="svg-clientes" width="44" height="41">
+                            <use href="./images/SVG/svgs.svg#cliente-3"></use>
+                        </svg>
+                    </li>
+                    <li>
+                        <svg class="svg-clientes" width="85" height="41">
+                            <use href="./images/SVG/svgs.svg#cliente-4"></use>
+                        </svg>
+                    </li>
+                    <li>
+                        <svg class="svg-clientes" width="63" height="46">
+                            <use href="./images/SVG/svgs.svg#cliente-5"></use>
+                        </svg>
+                    </li>
+                    <li>
+                        <svg class="svg-clientes" width="94" height="44">
+                            <use href="./images/SVG/svgs.svg#cliente-6"></use>
+                        </svg>
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <a class="logo" href="">WebStudio</a>
+            <section class="info_footer">
+                <address class="info_empresa">
+                    <p class="direccion_empresa">
+                        Calz. Ticomán 500, Ciudad de <br />
+                        México, CDMX, México
+                    </p>
+                    <p class="correo_empresa">info@example.com</p>
+                    <p class="telefono_empresa">+52 55 5529 6000</p>
+                </address>
+                <aside>
+                    <p>ENCUENTRENOS EN</p>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <svg class="icon" width="20" height="20">
+                                    <use
+                                        href="./images/SVG/svgs.svg#instagram"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="icon" width="20" height="20">
+                                    <use
+                                        href="./images/SVG/svgs.svg#twitter"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="icon" width="20" height="20">
+                                    <use
+                                        href="./images/SVG/svgs.svg#facebook"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="icon" width="20" height="20">
+                                    <use
+                                        href="./images/SVG/svgs.svg#linkedin"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+                <aside>
+                    <p>SUSCRIBASE AL BOLETIN INFORMATIVO</p>
+                    <form action="">
+                        <label for="">
+                            <input
+                                class="input_boletin"
+                                type="email"
+                                name="email"
+                                placeholder="Correo electrónico"
+                            />
+                        </label>
+                        <button class="btn_boletin" type="submit">
+                            <div class="btn_boletin_container">
+                                <span>Suscríbase</span>
+                                <svg class="icon" width="30" height="30">
+                                    <use
+                                        href="./images/SVG/svgs.svg#telegram"
+                                    ></use>
+                                </svg>
+                            </div>
+                        </button>
+                    </form>
+                </aside>
+            </section>
+        </footer>
+        <script src="./js/modal.js"></script>
+    </body>
+</html>
