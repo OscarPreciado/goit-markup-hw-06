@@ -120,10 +120,11 @@ a {
 .banner {
     background-color: var(--banner-color);
     text-align: center;
-    padding: 200px 400px;
+    padding: 200px 500px;
     background-blend-mode: overlay;
     position: relative;
     background: url("../images/img-overlay.png");
+    width: 1600px;
 }
 
 .banner .overlay {
@@ -593,8 +594,10 @@ form h3{
     background: #fff;
     width: 528px;
     height: 581px;
-    margin-left: 680px;
-    margin-top: 10%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
 }
 
 
