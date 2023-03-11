@@ -120,7 +120,7 @@ a {
 .banner {
     background-color: var(--banner-color);
     text-align: center;
-    padding: 200px 500px;
+    padding: 200px 450px;
     background-blend-mode: overlay;
     position: relative;
     background: url("../images/img-overlay.png");
