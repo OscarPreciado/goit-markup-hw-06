@@ -666,6 +666,7 @@ form h3{
     height: 120px;
     margin-top: 2px;
     padding: 10px;
+    resize: none;
 }
 .checked{
     display: flex;
