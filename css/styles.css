@@ -29,13 +29,14 @@ a {
 
 .seccion {
     /* margin-top: 89px; */
-    padding: 0 0 94px 0;
+    /* padding: 0 0 94px 0; */
 }
 
 .container {
-    padding: 0 15px;
+    /* padding: 0 15px; */
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 0 94px 0
 }
 /* header */
 
@@ -124,7 +125,8 @@ a {
     background-blend-mode: overlay;
     position: relative;
     background: url("../images/img-overlay.png");
-    width: 1600px;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .banner .overlay {
@@ -482,7 +484,7 @@ a {
 
 footer {
     background-color: var(--banner-color);
-    padding: 94px var(--container-padding);
+    padding: 100px var(--container-padding);
 }
 
 .info_empresa p {
